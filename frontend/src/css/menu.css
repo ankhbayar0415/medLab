@@ -1,0 +1,43 @@
+.menuItems {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin: 0 10px;
+}
+.pro-icon {
+  margin: 0 10px;
+}
+.pro-icon:hover {
+  cursor: pointer;
+}
+
+.sub-menu-profile {
+  position: absolute;
+  top: 60px;
+  display: none;
+  flex-direction: column;
+  background-color: #242424;
+  border-radius: 2px;
+  border: 1px solid #131313;
+  right: 70px;
+  box-shadow: 0 0 5px #131313;
+}
+
+.sub-menu-options {
+  display: flex;
+  align-items: center;
+}
+
+.sub-menu-profile a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: start;
+  padding: 5px;
+  padding-right: 25px;
+  width: 150px;
+  color: #c7c7c7;
+}
+.sub-menu-profile a:hover {
+  background-color: #3b3b3b;
+}

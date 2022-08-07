@@ -1,0 +1,123 @@
+.instagram-navbar-menu-container {
+  position: sticky;
+  margin: 0 auto;
+  background-color: #131313;
+  border-bottom: 1px solid #3b3b3b;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-wrapper {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.title-section,
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+.logo {
+  padding: 0 1em;
+  width: 150px;
+  height: 100%;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.search-section > .search-people {
+  padding: 10px;
+  width: 100%;
+  background-color: #3b3b3b;
+  text-align: center;
+  border: 1px solid #414141;
+  outline: none;
+  text-align: start;
+  border-radius: 3px;
+}
+
+.title-section > h1 > a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  text-align: end;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: Edwardian Script ITC;
+}
+
+/* Search-Section */
+.search-result {
+  position: absolute;
+  height: 340px;
+  display: none;
+  width: 400px;
+  border-radius: 2px;
+  border: 1px solid #131313;
+  box-shadow: 0 0 10px #131313;
+  background-color: #242424;
+  top: 60px;
+  overflow-y: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.search-result::-webkit-scrollbar {
+  display: none;
+}
+
+.search-result-item {
+  padding-left: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #efefef;
+}
+.search-result-item:hover {
+  background-color: rgba(216, 206, 206, 0.3);
+}
+.search-result-fullname {
+  font-size: 14px;
+  margin: 0;
+}
+.search-result-username {
+  display: block;
+  flex: 100%;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 0;
+}
+
+.search-result-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  padding: 5px 0;
+}
+
+.no-result {
+  margin-top: 20px;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+
+/* End Search Section */
+/* /*  */
+@media screen and (max-width: 600px) {
+  .search-people {
+    display: none;
+  }
+}

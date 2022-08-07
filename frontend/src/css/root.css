@@ -1,0 +1,144 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+:root {
+  --custom-border: 0.5px solid rgb(230, 227, 227);
+  --custom-background-color: #242424;
+  --container-color: #242424;
+}
+
+img {
+  pointer-events: none;
+}
+
+.popup-message-show,
+.popup-message-hide {
+  position: fixed;
+  width: 500px;
+  left: 30vw;
+  top: 80vh;
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(41, 163, 4, 0.9);
+  padding: 2px;
+  border-radius: 5px;
+  z-index: 99999;
+  box-shadow: 0 0 7px 3px rgba(0, 64, 68, 0.5);
+  transition: all 1s ease-in-out;
+}
+.popup-message-hide {
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+/* For code verify */
+.verify-code-input-field {
+  outline: none;
+  padding: 11px;
+  margin: 7px;
+  width: 25px;
+  height: 25px;
+  transition: all 1s ease-in-out;
+}
+.verify-code-main-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+.verify-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  min-height: 300px;
+  padding-bottom: 10px;
+  background-color: #131313;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f3753b;
+  transition: all 1s ease-in-out;
+}
+.verify-container .verify-code-title {
+  text-align: center;
+  padding: 16px 0;
+  color: #c7c7c7;
+  font-size: 23px;
+}
+.verify-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.verify-container-button,
+.resend-container-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.resend-text {
+  color: #c7c7c7;
+}
+
+.verify-code-button,
+.resend-code-button {
+  border: none;
+  color: white;
+  background: #f3753b;
+  padding: 11px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.resend-code-button {
+  background: orange;
+}
+.resend-code-button:disabled {
+  width: 120px;
+  cursor: wait;
+  background: rgb(119, 119, 119);
+}
+
+.resend-code-button:hover {
+  background: #e03c67;
+}
+
+.verify-code-button:hover {
+  background: #e03c67;
+}
+.verify-error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  background-color: red;
+  opacity: 0.4;
+  border-radius: 2px;
+  padding: 5px 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  .verify-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 900px) {
+  .verify-code-input-field {
+    width: 15px;
+    height: 15px;
+  }
+}

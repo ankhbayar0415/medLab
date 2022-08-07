@@ -1,0 +1,313 @@
+.main-home-container {
+  display: flex;
+  justify-content: left;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #242424;
+}
+
+.post-stories-section {
+  width: 560px;
+}
+
+.post-sections,
+.stories-section {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.stories-section {
+  position: relative;
+  height: 100px;
+  border: var(--custom-border);
+  scroll-behavior: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  background-color: white;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 4px;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+}
+
+.stories-section::-webkit-scrollbar {
+  display: none;
+}
+
+.insta-post {
+  position: relative;
+  background-color: #242424;
+  border: 1px solid #414141;
+  min-height: max-content;
+  border-radius: 2px;
+  margin: 25px 0 5px 0;
+}
+
+/*Suggestion box*/
+.suggestions-section {
+  height: 100%;
+  top: 35px;
+  margin-left: 20px;
+}
+
+.suggestion-box {
+  position: fixed;
+
+  width: 23%;
+  min-width: 250px;
+  top: 100px;
+  height: 350px;
+}
+
+.suggestions-container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 250px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: block;
+  scroll-behavior: smooth;
+}
+
+.suggestions-container::-webkit-scrollbar {
+  display: none;
+}
+
+.suggestion-item-user {
+  position: relative;
+  background-color: #414141;
+  cursor: pointer;
+  display: inline-block;
+  height: calc(100% - 50px);
+  margin: 7px;
+  width: 150px;
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  z-index: 8;
+}
+
+.disable-scroll {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.suggestion-item-user-image {
+  position: relative;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestion-item-user-image img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.suggestion-item-user-info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.suggestion-item-user-name {
+  font-size: 14px;
+  margin: 7px;
+}
+
+.suggestions-scroll-container {
+  position: absolute;
+  margin-left: 7px;
+  height: 300px;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.suggestions-main-container {
+  border: 1px solid #414141;
+  margin: 20px auto;
+}
+
+#next,
+#prev {
+  position: relative;
+  background-color: rgb(151, 158, 167);
+  text-align: center;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  z-index: 15;
+}
+.suggestions-container-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.suggestions-scroll-container #next :hover,
+.suggestions-scroll-container #prev :hover {
+  opacity: 0.5;
+}
+
+.suggestions-scroll-container i {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Vertical Suggestions */
+
+.vertical-suggestions-container-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  padding-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.vertical-suggestion-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin: 7px 5px 7px 20px;
+  width: 97%;
+  border-radius: 5px;
+  z-index: 8;
+}
+.vertical-suggestion-item-info {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  left: 20px;
+
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* End */
+
+/* Poup Menu More Post */
+.popup-menupost-main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-menupost-container {
+  position: absolute;
+  background-color: #242424;
+  z-index: 9999;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.popup-menupost-container ul {
+  margin: 0;
+  padding: 0;
+}
+.popup-menupost-container ul li {
+  list-style: none;
+  width: 400px;
+  cursor: pointer;
+  margin: 0;
+  padding: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid #3b3b3b;
+  transition: all 0.5s ease-in-out;
+}
+.post-report,
+.post-delete-post,
+.post-unfollow-user {
+  font-weight: bold;
+  color: #fe6c21;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-menupost-container ul li:last-child {
+  border-bottom: none;
+}
+.post-load-more {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+  color: #fe6c21;
+  transition: all 0.5s ease-in-out;
+}
+.load-more-button {
+  height: 40px;
+  width: 40px;
+}
+
+/* End */
+
+@media screen and (max-width: 1024px) {
+  .main-home-container {
+    justify-content: center !important;
+  }
+  .post-stories-section {
+    margin: 0 auto !important;
+  }
+
+  .suggestions-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-home-container {
+    justify-content: center !important;
+  }
+
+  .post-stories-section {
+    width: 100%;
+  }
+  .stories-section,
+  .post-sections {
+    width: 100%;
+  }
+}
